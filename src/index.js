@@ -1,11 +1,17 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+(function () {
+  class SimpleExample {
+    constructor() {
+      this.logMessage = this.logMessage.bind(this);
+      this.writeMessage = this.writeMessage.bind(this);
+    }
 
-import confetti from 'canvas-confetti';
+    logMessage(message) {
+      console.log(message);
+    }
 
-confetti.create(document.getElementById('canvas'), {
-  resize: true,
-  useWorker: true,
-})({ particleCount: 200, spread: 200 });
+    writeMessage(message) {
+      document.write(message);
+    }
+  }
+  window.SimpleExample = SimpleExample;
+})();

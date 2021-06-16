@@ -1,4 +1,6 @@
-# New Project
+# Lib Crafting Tool
+
+Built to provide modern functionalities for legacy web development environments
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 

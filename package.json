@@ -1,13 +1,17 @@
 {
+  "name": "lib-crafting-tool",
+  "version": "0.1.0",
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build",
+    "build": "snowpack build --polyfill-node",
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\""
   },
   "dependencies": {
-    "canvas-confetti": "^1.2.0"
+    "360-image-viewer": "^1.0.1",
+    "canvas-confetti": "^1.2.0",
+    "canvas-fit": "^1.5.0"
   },
   "devDependencies": {
     "prettier": "^2.2.1",
